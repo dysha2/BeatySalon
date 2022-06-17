@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--Colors-->
+    <SolidColorBrush x:Key="FocusColor">
+        <SolidColorBrush.Color>
+            <Color A="255" R="255" G="74" B="109"/>
+        </SolidColorBrush.Color>
+    </SolidColorBrush>
+    <SolidColorBrush x:Key="MainBackgr">
+        <SolidColorBrush.Color>
+            <Color A="255" R="255" G="255" B="255"/>
+        </SolidColorBrush.Color>
+    </SolidColorBrush>
+    <SolidColorBrush x:Key="AdditionalBackgr">
+        <SolidColorBrush.Color>
+            <Color A="255" R="255" G="228" B="255"/>
+        </SolidColorBrush.Color>
+    </SolidColorBrush>
+    <!---->
+    <Style TargetType="Window" x:Key="WinAll">
+        <Setter Property="FontFamily" Value="Tahoma"/>
+    </Style>
+</ResourceDictionary>
