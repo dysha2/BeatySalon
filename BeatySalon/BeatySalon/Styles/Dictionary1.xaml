@@ -19,5 +19,13 @@
     <!---->
     <Style TargetType="Window" x:Key="WinAll">
         <Setter Property="FontFamily" Value="Tahoma"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Background" Value="{StaticResource MainBackgr}"/>
+    </Style>
+    <!--Label STYLES-->
+    <Style TargetType="Label" x:Key="Header1">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="{StaticResource FocusColor}"/>
     </Style>
 </ResourceDictionary>

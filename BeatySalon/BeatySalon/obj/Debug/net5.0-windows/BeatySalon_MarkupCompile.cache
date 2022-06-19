@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\
 BeatySalon
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySalon\BeatySalon\App.xaml
-2621935450
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\App.xaml
+61477873535
 1-806871792
-20-1281379654
-217-1228816964
-Dictionary1.xaml;Views\MainWindow.xaml;
+24-1376457991
+217-1319786241
+Styles\ButtonStyles.xaml;Styles\Dictionary1.xaml;Styles\TextBoxStyles.xaml;Views\AuthorizationWindow.xaml;Views\MainWindow.xaml;Views\MessageBox\MessageBoxWindow.xaml;
 
 False
 

@@ -23,6 +23,7 @@ namespace BeatySalon.Views
         public MainWindow()
         {
             InitializeComponent();
+            var a = Session.Context.Genders;
         }
     }
 }
