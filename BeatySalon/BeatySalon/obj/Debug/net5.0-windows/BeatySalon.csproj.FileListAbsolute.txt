@@ -65,6 +65,7 @@ C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySalon\BeatySalon\obj\
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\App.baml
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Logo\beauty_logo.ico
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon_Content.g.cs
+<<<<<<< HEAD
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Dictionary1.baml
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\AuthorizationWindow.g.cs
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\App.g.cs
@@ -171,3 +172,86 @@ C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatyS
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Экспресс SPA.png
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Экспресс-педикюр.jpg
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.csproj.AssemblyReference.cache
+=======
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Logo\beauty_logo.ico
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\BeatySalon.exe
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\BeatySalon.deps.json
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\BeatySalon.runtimeconfig.json
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\BeatySalon.runtimeconfig.dev.json
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\BeatySalon.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\BeatySalon.pdb
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Humanizer.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Identity.Client.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Prism.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Prism.Wpf.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\System.Runtime.Caching.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.csproj.AssemblyReference.cache
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\AuthorizationWindow.g.cs
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MainWindow.g.cs
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon_Content.g.cs
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon_MarkupCompile.cache
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon_MarkupCompile.lref
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\App.baml
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\AuthorizationWindow.baml
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MainWindow.baml
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.g.resources
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.AssemblyInfoInputs.cache
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.AssemblyInfo.cs
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.csproj.CoreCompileInputs.cache
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.csproj.CopyComplete
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\refint\BeatySalon.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.pdb
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.genruntimeconfig.cache
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\ref\BeatySalon.dll
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\Dictionary1.baml
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\ButtonStyles.baml
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\TextBoxStyles.baml
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MessageBox\MessageBoxWindow.g.cs
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MessageBox\MessageBoxWindow.baml
+>>>>>>> origin/AuthWindow
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\ButtonStyles.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\TextBoxStyles.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MessageBox\MessageBoxWindow.g.cs
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\Dictionary1.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MessageBox\MessageBoxWindow.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\TextStyles.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\Templates.baml

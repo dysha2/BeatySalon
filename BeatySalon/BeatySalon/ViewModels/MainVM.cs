@@ -24,7 +24,7 @@ namespace BeatySalon.ViewModels
                 "0,7 1",
                 "0 1"
             };
-            IsAdmin = true;
+            IsAdmin = Session.IsAdmin;
             _Services = Session.Context.Services.Local.ToObservableCollection();
             SetServices(5);
         }
