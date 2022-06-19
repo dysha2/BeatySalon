@@ -11,10 +11,154 @@
   <ItemGroup>
     <None Remove="Images\Logo\beauty_logo.ico" />
     <None Remove="Images\Logo\beauty_logo.png" />
+    <None Remove="Images\Услуги салона красоты\122454.png" />
+    <None Remove="Images\Услуги салона красоты\96.png" />
+    <None Remove="Images\Услуги салона красоты\face.png" />
+    <None Remove="Images\Услуги салона красоты\makeup.jpg" />
+    <None Remove="Images\Услуги салона красоты\man.png" />
+    <None Remove="Images\Услуги салона красоты\mask.jpeg" />
+    <None Remove="Images\Услуги салона красоты\piling.jpg" />
+    <None Remove="Images\Услуги салона красоты\soliarij.jpg" />
+    <None Remove="Images\Услуги салона красоты\брови.png" />
+    <None Remove="Images\Услуги салона красоты\Гречишный массаж.jpg" />
+    <None Remove="Images\Услуги салона красоты\Декорирование нарощенных ресниц стразами.jpg" />
+    <None Remove="Images\Услуги салона красоты\Демакияж.jpg" />
+    <None Remove="Images\Услуги салона красоты\Депиляция воском.jpg" />
+    <None Remove="Images\Услуги салона красоты\Европейский маникюр.jpg" />
+    <None Remove="Images\Услуги салона красоты\ИК-сауна.jpg" />
+    <None Remove="Images\Услуги салона красоты\Классический маникюр.png" />
+    <None Remove="Images\Услуги салона красоты\Комбинированный маникюр.jpg" />
+    <None Remove="Images\Услуги салона красоты\Контурная пластика.jpg" />
+    <None Remove="Images\Услуги салона красоты\массаж.jpg" />
+    <None Remove="Images\Услуги салона красоты\Мезотерапия.jpg" />
+    <None Remove="Images\Услуги салона красоты\Моделирование ресниц.jpg" />
+    <None Remove="Images\Услуги салона красоты\ногти.png" />
+    <None Remove="Images\Услуги салона красоты\Окрашивание бровей.jpg" />
+    <None Remove="Images\Услуги салона красоты\Парафинотерапия.jpg" />
+    <None Remove="Images\Услуги салона красоты\Покрытие ногтей гель-лаком.jpg" />
+    <None Remove="Images\Услуги салона красоты\Полировка ногтей.jpg" />
+    <None Remove="Images\Услуги салона красоты\Прессотерапия.jpg" />
+    <None Remove="Images\Услуги салона красоты\Прокол ушей пистолетом.png" />
+    <None Remove="Images\Услуги салона красоты\Ресницы.png" />
+    <None Remove="Images\Услуги салона красоты\Снятие ресниц.jpg" />
+    <None Remove="Images\Услуги салона красоты\Стоун-терапия.jpg" />
+    <None Remove="Images\Услуги салона красоты\стрижка.png" />
+    <None Remove="Images\Услуги салона красоты\Укрепление ногтей гелем.jpg" />
+    <None Remove="Images\Услуги салона красоты\Шугаринг.jpg" />
+    <None Remove="Images\Услуги салона красоты\Экспресс SPA.png" />
+    <None Remove="Images\Услуги салона красоты\Экспресс-педикюр.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Images\Logo\beauty_logo.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\122454.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\96.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\face.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\makeup.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\man.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\mask.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\piling.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\soliarij.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\брови.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Гречишный массаж.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Декорирование нарощенных ресниц стразами.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Демакияж.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Депиляция воском.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Европейский маникюр.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\ИК-сауна.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Классический маникюр.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Комбинированный маникюр.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Контурная пластика.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\массаж.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Мезотерапия.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Моделирование ресниц.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\ногти.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Окрашивание бровей.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Парафинотерапия.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Покрытие ногтей гель-лаком.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Полировка ногтей.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Прессотерапия.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Прокол ушей пистолетом.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Ресницы.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Снятие ресниц.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Стоун-терапия.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\стрижка.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Укрепление ногтей гелем.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Шугаринг.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Экспресс SPA.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Услуги салона красоты\Экспресс-педикюр.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
