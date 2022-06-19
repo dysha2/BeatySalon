@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 #nullable disable
 
@@ -20,6 +21,15 @@ namespace BeatySalon.Models
         public string Description { get; set; }
         public double? Discount { get; set; }
         public string MainImagePath { get; set; }
+        [NotMapped]
+        public decimal PriceWithDiscount
+        {
+            get
+            {
+                decimal discount =decimal.Parse((1-Discount).ToString());
+                return Cost * discount;
+            }
+        }
 
         public virtual ICollection<ClientService> ClientServices { get; set; }
         public virtual ICollection<ServicePhoto> ServicePhotos { get; set; }
