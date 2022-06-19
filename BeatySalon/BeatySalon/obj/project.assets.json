@@ -5918,11 +5918,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dyha0\\OneDrive\\Рабочий стол\\Progs\\BeatySalon\\BeatySalon\\BeatySalon.csproj",
+      "projectUniqueName": "C:\\Users\\dyha0\\OneDrive\\Рабочий стол\\Progs\\BeatySal\\BeatySalon\\BeatySalon\\BeatySalon.csproj",
       "projectName": "BeatySalon",
-      "projectPath": "C:\\Users\\dyha0\\OneDrive\\Рабочий стол\\Progs\\BeatySalon\\BeatySalon\\BeatySalon.csproj",
+      "projectPath": "C:\\Users\\dyha0\\OneDrive\\Рабочий стол\\Progs\\BeatySal\\BeatySalon\\BeatySalon\\BeatySalon.csproj",
       "packagesPath": "C:\\Users\\dyha0\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dyha0\\OneDrive\\Рабочий стол\\Progs\\BeatySalon\\BeatySalon\\obj\\",
+      "outputPath": "C:\\Users\\dyha0\\OneDrive\\Рабочий стол\\Progs\\BeatySal\\BeatySalon\\BeatySalon\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

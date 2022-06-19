@@ -1,0 +1,67 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:models="clr-namespace:BeatySalon.Models">
+    <!--MessageBox Templates-->
+    <DataTemplate x:Key="MessageBoxOKTemplate">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.Close}" 
+                    Content="ОК" CommandParameter="{Binding ElementName=MessageWindow}"/>
+        </StackPanel>
+    </DataTemplate>
+    <!---->
+    
+    <!--Templates-->
+    <DataTemplate DataType="{x:Type models:Service}" x:Key="ServicesTemplate">
+        <DataTemplate.Resources>
+            <Style TargetType="TextBlock" x:Key="VisibleByDiscount">
+                <Style.Triggers>
+                    <DataTrigger  Binding="{Binding Discount}" Value="0">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+            <Style TargetType="Button">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.IsAdmin}" Value="false">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+            <Style TargetType="StackPanel">
+                <Setter Property="Background" Value="LightGreen"/>
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding Discount}" Value="0">
+                        <Setter Property="Background" Value="{StaticResource AdditionalBackgr}"/>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </DataTemplate.Resources>
+        <StackPanel>
+            <Image Width="100" Height="100" Source="{Binding MainImagePath,Converter={StaticResource ImagePathConvert}}"/>
+            <TextBlock Text="{Binding Title}" Foreground="{StaticResource FocusColor}"/>
+            <TextBlock>
+                <Run Text="{Binding Cost,StringFormat={}{0:F2}}">
+                    <Run.Resources>
+                        <Style TargetType="Run">
+                            <Setter Property="TextDecorations" Value="Strikethrough"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Discount}" Value="0">
+                                    <Setter Property="TextDecorations" Value="None"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Run.Resources>
+                </Run>
+                <TextBlock Text="{Binding PriceWithDiscount,StringFormat={}{0:F2}}" Style="{StaticResource VisibleByDiscount}"/>
+                <Run Text="рублёв за"/>
+                <Run Text="{Binding DurationInSeconds,Converter={StaticResource SecondsToMinuteConvert}}"/>
+                <Run Text="минут"/>
+            </TextBlock>
+            <TextBlock Text="{Binding Discount,StringFormat={}* скида {0:P2}}" Style="{StaticResource VisibleByDiscount}"/>
+            <Button Content="Редактировать"/>
+            <Button Content="Удалить"/>
+        </StackPanel>
+    </DataTemplate>
+    <!---->
+    
+</ResourceDictionary>

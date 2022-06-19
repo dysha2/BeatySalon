@@ -4,9 +4,29 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BeatySalon.Views"
+        xmlns:VM="clr-namespace:BeatySalon.ViewModels"
         mc:Ignorable="d"
-        Title="AuthorizationWindow" Height="450" Width="800">
+        Title="Салон Красоты" Height="250" Width="600" ResizeMode="NoResize"
+        Name="AuthWindow" Style="{StaticResource WinAll}">
+
+    <Window.DataContext>
+        <VM:AuthorizationVM/>
+    </Window.DataContext>
+    
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Style="{StaticResource Header1}" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Добро пождаловать в салон красоты."/>
+        <Button Grid.Row="2" Margin="25" Content="Войти" Command="{Binding LetsIn}" CommandParameter="{Binding ElementName=AuthWindow}"/>
+
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="25,0,25,0" Text="{Binding Password}" Style="{StaticResource placeHolder}" Tag="Секретик..."/>
+
     </Grid>
 </Window>
