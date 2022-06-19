@@ -4,9 +4,31 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BeatySalon.Views"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Style="{StaticResource WinAll}">
-    <Grid>
-        <TextBlock Text="srsafafsafa"/>
-    </Grid>
+        xmlns:VM="clr-namespace:BeatySalon.ViewModels"
+        mc:Ignorable="d" 
+        Title="MainWindow" Height="450" Width="528" Style="{StaticResource WinAll}">
+    <Window.DataContext>
+        <VM:MainVM/>
+    </Window.DataContext>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Фильтрация">
+                <MenuItem Header="От 0% до 5%" Command ="{Binding SetFilter}" CommandParameter="0"/>
+                <MenuItem Header="От 5% до 15%" Command ="{Binding SetFilter}" CommandParameter="1"/>
+                <MenuItem Header="От 15% до 30%" Command ="{Binding SetFilter}" CommandParameter="2"/>
+                <MenuItem Header="От 30% до 70%" Command ="{Binding SetFilter}" CommandParameter="3"/>
+                <MenuItem Header="От 70% до 100%" Command ="{Binding SetFilter}" CommandParameter="4"/>
+                <MenuItem Header="Все" Command ="{Binding SetFilter}" CommandParameter="5"/>
+            </MenuItem>
+        </Menu>
+        <TextBox Text="{Binding SearchString,UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Top"/>
+        <CheckBox Content="Сортировка по убыванию" DockPanel.Dock="Top" IsThreeState="False" IsChecked="{Binding SortMode}"/>
+        <TextBlock DockPanel.Dock="Bottom">
+            <Run Text="Элементов"/>
+            <Run Text="{Binding ElementName=ServicesListBox,Path=Items.Count,Mode=OneWay}"/>
+            <Run Text="из"/>
+            <Run Text="{Binding ServicesCount,Mode=OneWay}"/>
+        </TextBlock>
+        <ListBox ItemsSource="{Binding Services}" ItemTemplate="{StaticResource ServicesTemplate}" Name="ServicesListBox"/>
+    </DockPanel>
 </Window>

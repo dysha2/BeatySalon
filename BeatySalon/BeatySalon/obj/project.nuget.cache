@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4rkJAoBgafSC8l96c4UQ5RqhKJ2uH0Yc8QTL+40ToBEz35VyG+S6bg7uPC7aMhh7G0rYusJDGkXhPzI63iDI9A==",
+  "dgSpecHash": "ZfFYxBag2ZEXCvHfefQpb087a1MKwEXMI9XcJ+D+9DlbjUfrc2whX+TRDMZEtP/Vz7I/iV6WT6weL5oJ5QQWQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dyha0\\OneDrive\\Рабочий стол\\Progs\\BeatySalon\\BeatySalon\\BeatySalon.csproj",
+  "projectFilePath": "C:\\Users\\dyha0\\OneDrive\\Рабочий стол\\Progs\\BeatySal\\BeatySalon\\BeatySalon\\BeatySalon.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dyha0\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\dyha0\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
