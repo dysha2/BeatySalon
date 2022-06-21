@@ -41,6 +41,7 @@
     <!--Image Styles-->
     <Style TargetType="Image">
         <Setter Property="MaxHeight" Value="200"/>
+        <Setter Property="MinHeight" Value="200"/>
         <Setter Property="Width" Value="200"/>
         <Setter Property="MaxWidth" Value="200"/>
         <Setter Property="HorizontalAlignment" Value="Left"/>
