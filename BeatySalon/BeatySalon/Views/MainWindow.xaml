@@ -6,10 +6,12 @@
         xmlns:local="clr-namespace:BeatySalon.Views"
         xmlns:VM="clr-namespace:BeatySalon.ViewModels"
         mc:Ignorable="d" 
-        Title="Сервисы" Height="450" Width="528" Style="{StaticResource WinAll}">
+        Title="Список услуг" Height="600" Width="800" MinHeight="400" MinWidth="600"
+        Style="{StaticResource WinAll}">
     <Window.DataContext>
         <VM:MainVM/>
     </Window.DataContext>
+    
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Фильтрация">
@@ -21,14 +23,15 @@
                 <MenuItem Header="Все" Command ="{Binding SetFilter}" CommandParameter="5"/>
             </MenuItem>
         </Menu>
-        <TextBox Text="{Binding SearchString,UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Top"/>
-        <CheckBox Content="Сортировка по убыванию" DockPanel.Dock="Top" IsThreeState="False" IsChecked="{Binding SortMode}"/>
+        <TextBox Margin="12,12,26,12" Text="{Binding SearchString,UpdateSourceTrigger=PropertyChanged}"  Style="{StaticResource placeHolder}" Tag="Найти..." DockPanel.Dock="Top"/>
+        <CheckBox Margin="12,0,0,0" Content="Сортировка по убыванию" DockPanel.Dock="Top" IsThreeState="False" IsChecked="{Binding SortMode}"/>
         <TextBlock DockPanel.Dock="Bottom">
             <Run Text="Элементов"/>
             <Run Text="{Binding ElementName=ServicesListBox,Path=Items.Count,Mode=OneWay}"/>
             <Run Text="из"/>
             <Run Text="{Binding ServicesCount,Mode=OneWay}"/>
         </TextBlock>
-        <ListBox ItemsSource="{Binding Services}" ItemTemplate="{StaticResource ServicesTemplate}" Name="ServicesListBox"/>
+        <ListBox ItemsSource="{Binding Services}" ItemTemplate="{StaticResource ServicesTemplate}"
+                 Name="ServicesListBox" HorizontalContentAlignment="Stretch"/>
     </DockPanel>
 </Window>

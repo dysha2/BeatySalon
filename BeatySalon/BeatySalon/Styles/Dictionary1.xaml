@@ -23,6 +23,11 @@
             <Color A="255" R="255" G="228" B="255"/>
         </SolidColorBrush.Color>
     </SolidColorBrush>
+    <SolidColorBrush x:Key="GreenColor">
+        <SolidColorBrush.Color>
+            <Color A="50" R="50" G="250" B="50"/>
+        </SolidColorBrush.Color>
+    </SolidColorBrush>
     <!---->
     
     <!--Common Styles-->
@@ -32,6 +37,60 @@
         <Setter Property="Background" Value="{StaticResource MainBackgr}"/>
     </Style>
     <!---->
+
+    <!--Image Styles-->
+    <Style TargetType="Image">
+        <Setter Property="MaxHeight" Value="200"/>
+        <Setter Property="MinHeight" Value="200"/>
+        <Setter Property="Width" Value="200"/>
+        <Setter Property="MaxWidth" Value="200"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="Margin" Value="5"/>
+    </Style>
+    <!---->
     
+    <!--Containers Styles-->
+    <Style TargetType="StackPanel" x:Key="ServicesPanel">
+        <Setter Property="Background" Value="{StaticResource GreenColor}"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Discount}" Value="0">
+                <Setter Property="Background" Value="{StaticResource AdditionalBackgr}"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
     
+    <Style TargetType="Border" x:Key="ServicesBorder">
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="BorderThickness" Value="2.5"/>
+        <Setter Property="BorderBrush" Value="{StaticResource FocusColor}"/>
+        <Setter Property="CornerRadius" Value="2.5"/>
+        <Setter Property="Width" Value="Auto"/>
+        <Setter Property="Height" Value="Auto"/>
+    </Style>
+    <!---->
+    
+    <!--Menu Styles-->
+    <Style TargetType="Menu">
+        <Setter Property="Background" Value="{StaticResource AdditionalBackgr}"/>
+    </Style>
+    <Style TargetType="MenuItem">
+        <Setter Property="Foreground" Value="{StaticResource FocusColor}"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Background" Value="{StaticResource AdditionalBackgr}"/>
+    </Style>
+    <!---->
+    
+    <!--CheckBox Styles-->
+    <Style TargetType="CheckBox">
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="BorderBrush" Value="{StaticResource FocusColor}"/>
+        <Setter Property="BorderThickness" Value="1.5"/>
+        <Style.Triggers>
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="BorderBrush" Value="Black"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!---->
 </ResourceDictionary>

@@ -44,10 +44,54 @@
     
     <!--Label STYLES-->
     <Style TargetType="Label" x:Key="Header1">
-        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontSize" Value="30"/>
         <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{StaticResource FocusColor}"/>
+    </Style>
+    <Style TargetType="Label" x:Key="Header2">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{StaticResource FocusColor}"/>
+    </Style>
+    <Style TargetType="Label" x:Key="Header3">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Foreground" Value="{StaticResource FocusColor}"/>
     </Style>
     <!---->
-    
+
+    <!--TextBlock STYLES-->
+    <Style TargetType="TextBlock">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="AndreiRublev" BasedOn="{StaticResource {x:Type TextBlock}}">
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="VisibleByDiscount" BasedOn="{StaticResource {x:Type TextBlock}}">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Foreground" Value="{StaticResource FocusColor}"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Discount}" Value="0">
+                <Setter Property="Visibility" Value="Collapsed"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="StrikeByDiscount">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="TextDecorations" Value="Strikethrough"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Discount}" Value="0">
+                <Setter Property="TextDecorations" Value="None"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    <!---->
 </ResourceDictionary>

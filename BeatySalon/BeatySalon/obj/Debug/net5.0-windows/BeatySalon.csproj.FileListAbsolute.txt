@@ -1,4 +1,5 @@
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Logo\beauty_logo.ico
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\неважно\meme.jpg
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\122454.png
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\96.png
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\face.png
@@ -82,9 +83,11 @@ C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatyS
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.csproj.AssemblyReference.cache
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\ButtonStyles.baml
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\TextStyles.baml
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\AuthorizationWindow.g.cs
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\EditWindow.g.cs
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MainWindow.g.cs
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MessageBox\MessageBoxWindow.g.cs
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\App.g.cs
@@ -96,6 +99,7 @@ C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatyS
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\Dictionary1.baml
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\Templates.baml
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\AuthorizationWindow.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\EditWindow.baml
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MainWindow.baml
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MessageBox\MessageBoxWindow.baml
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.g.resources
@@ -108,6 +112,3 @@ C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatyS
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\ref\BeatySalon.dll
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.pdb
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.genruntimeconfig.cache
-C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\EditWindow.g.cs
-C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\EditWindow.baml
-C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.csproj.AssemblyReference.cache
