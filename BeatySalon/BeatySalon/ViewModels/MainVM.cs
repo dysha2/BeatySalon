@@ -13,6 +13,7 @@ namespace BeatySalon.ViewModels
 {
     public class MainVM : BindableBase
     {
+        public string MemePath = "meme.png";
         public MainVM()
         {
             FilterVariants = new string[]

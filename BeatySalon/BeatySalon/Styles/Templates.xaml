@@ -21,55 +21,63 @@
     
     <!--Read Templates-->
     <DataTemplate DataType="{x:Type models:Service}" x:Key="ServicesTemplate">
-        <DataTemplate.Resources>
-            <Style TargetType="TextBlock" x:Key="VisibleByDiscount">
-                <Style.Triggers>
-                    <DataTrigger  Binding="{Binding Discount}" Value="0">
-                        <Setter Property="Visibility" Value="Collapsed"/>
-                    </DataTrigger>
-                </Style.Triggers>
-            </Style>
-            <Style TargetType="Button">
-                <Style.Triggers>
-                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.IsAdmin}" Value="false">
-                        <Setter Property="Visibility" Value="Collapsed"/>
-                    </DataTrigger>
-                </Style.Triggers>
-            </Style>
-            <Style TargetType="StackPanel">
-                <Setter Property="Background" Value="LightGreen"/>
-                <Style.Triggers>
-                    <DataTrigger Binding="{Binding Discount}" Value="0">
-                        <Setter Property="Background" Value="{StaticResource AdditionalBackgr}"/>
-                    </DataTrigger>
-                </Style.Triggers>
-            </Style>
-        </DataTemplate.Resources>
-        <StackPanel>
-            <Image Width="100" Height="100" Source="{Binding MainImagePath,Converter={StaticResource ImagePathConvert}}"/>
-            <TextBlock Text="{Binding Title}" Foreground="{StaticResource FocusColor}"/>
-            <TextBlock>
-                <Run Text="{Binding Cost,StringFormat={}{0:F2}}">
-                    <Run.Resources>
-                        <Style TargetType="Run">
-                            <Setter Property="TextDecorations" Value="Strikethrough"/>
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Discount}" Value="0">
-                                    <Setter Property="TextDecorations" Value="None"/>
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Run.Resources>
-                </Run>
-                <TextBlock Text="{Binding PriceWithDiscount,StringFormat={}{0:F2}}" Style="{StaticResource VisibleByDiscount}"/>
-                <Run Text="рублёв за"/>
-                <Run Text="{Binding DurationInSeconds,Converter={StaticResource SecondsToMinuteConvert}}"/>
-                <Run Text="минут"/>
-            </TextBlock>
-            <TextBlock Text="{Binding Discount,StringFormat={}* скида {0:P2}}" Style="{StaticResource VisibleByDiscount}"/>
-            <Button Content="Редактировать" CommandParameter="{Binding }" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.EditService}"/>
-            <Button Content="Удалить" CommandParameter="{Binding }" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.DeleteService}"/>
-        </StackPanel>
+        <Border Style="{StaticResource ServicesBorder}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.25*"/>
+                    <ColumnDefinition Width="0.3*"/>
+                    <ColumnDefinition Width="0.3*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" 
+                            Style="{StaticResource ServicesPanel}">
+                    <Image Margin="25"
+                        Source="{Binding MainImagePath,Converter={StaticResource ImagePathConvert}}">
+                        <Image.ToolTip>
+                            <TextBlock>
+                                <Run Text="{Binding Title}"/>
+                            </TextBlock>
+                        </Image.ToolTip>
+                    </Image>
+                </StackPanel>
+
+                <Label Grid.Row="0" Grid.ColumnSpan="3" Grid.Column="1" Content="{Binding Title}" 
+                    Foreground="{StaticResource FocusColor}"
+                    Style="{StaticResource Header1}"/>
+
+                <Grid Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Margin="10" Orientation="Horizontal" Grid.Row="0">
+                        <TextBlock Text="{Binding Cost,StringFormat={}{0:F2}}" Style="{StaticResource StrikeByDiscount}"/>
+                        <TextBlock Text="{Binding PriceWithDiscount,StringFormat={} {0:F2}}" Style="{StaticResource VisibleByDiscount}"/>
+                        <TextBlock Style="{StaticResource AndreiRublev}">
+                        <Run Text=" рублёв за"/>
+                            <Run Text="{Binding DurationInSeconds,Converter={StaticResource SecondsToMinuteConvert}}"/>
+                            <Run Text="минут"/>
+                        </TextBlock>
+                    </StackPanel>
+
+                    <TextBlock Margin="10" Grid.Row="1" Text="{Binding Discount,StringFormat={}* скида {0:P0}}" 
+                                Style="{StaticResource VisibleByDiscount}">
+                        <TextBlock.ToolTip>
+                            <Image Source="/Images/неважно/meme.jpg"/>
+                        </TextBlock.ToolTip>
+                    </TextBlock>
+                </Grid>
+
+                <Button Grid.Row="2" Grid.Column="1" Content="Редактировать" CommandParameter="{Binding }" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.EditService}"/>
+                <Button Grid.Row="2" Grid.Column="2" Content="Удалить" CommandParameter="{Binding }" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.DeleteService}"/>
+            </Grid>
+        </Border>
     </DataTemplate>
     <!---->
     
