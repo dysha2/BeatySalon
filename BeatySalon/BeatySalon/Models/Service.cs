@@ -30,7 +30,20 @@ namespace BeatySalon.Models
                 return Cost * discount;
             }
         }
-
+        public void Delete()
+        {
+            foreach (var ServicePhoto in ServicePhotos)
+            {
+                ServicePhoto.Delete();
+            }
+            if (ClientServices.Count > 0)
+            {
+                throw new Exception("На эту услуги есть записанные клиенты");
+            } else
+            {
+                Session.Context.Services.Local.Remove(this);
+            }
+        }
         public virtual ICollection<ClientService> ClientServices { get; set; }
         public virtual ICollection<ServicePhoto> ServicePhotos { get; set; }
     }

@@ -9,15 +9,27 @@ using System.Windows.Controls;
 
 namespace BeatySalon.ViewModels
 {
+    public enum MessageType
+    {
+        JustInfo,
+        YesNo
+    }
     internal class MessageVM
     {
-        public enum MessageType
-        {
-            JustInfo
-        } 
+        
         private string _message;
         private string _title;
         private MessageType _type;
+        private MessageBoxResult _result;
+        private MessageBoxWindow _MessageBoxWindow;
+
+        public MessageVM()
+        {
+            _MessageBoxWindow = new MessageBoxWindow();
+            _MessageBoxWindow.DataContext = this;
+            _title = "Error";
+        }
+
         public string Message 
         { 
             get => _message; 
@@ -41,33 +53,26 @@ namespace BeatySalon.ViewModels
             get => _type;
             set
             {
-                    _type = value;
+                _type = value;
             }
         }
-
-        public void MessageBoxShow()
-        {
-            MessageBoxWindow NewWindow = new MessageBoxWindow();
-            NewWindow.DataContext = this;
-            NewWindow.ShowDialog();
-        }
-
-        public void ToShowMessageBoxWindow(string title, string message, MessageType type)
+        public MessageBoxResult Show(string title, string message, MessageType type)
         {
             Title = title;
             Message = message; 
             Type = type;
-            MessageBoxShow();
+            _MessageBoxWindow.ShowDialog();
+            return _result;
         }
 
-        public RelayCommand Close
+        public RelayCommand ResultMessage
         {
             get
             {
                 return new RelayCommand(obj =>
                 {
-                    var window = obj as Window;
-                    window.Close();
+                    _result = (MessageBoxResult)int.Parse(obj.ToString());
+                    _MessageBoxWindow.Close();
                 }
                 );
             }

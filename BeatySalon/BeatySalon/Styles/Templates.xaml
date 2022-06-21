@@ -3,65 +3,177 @@
                     xmlns:models="clr-namespace:BeatySalon.Models">
     <!--MessageBox Templates-->
     <DataTemplate x:Key="MessageBoxOKTemplate">
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.Close}" 
-                    Content="ОК" CommandParameter="{Binding ElementName=MessageWindow}"/>
-        </StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}" 
+                        Content="ОК" CommandParameter="1"/>
+            </StackPanel>
+        </Grid>
+    </DataTemplate>
+    
+    <DataTemplate x:Key="MessageBoxYesNoTemplate">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                 <ColumnDefinition/>
+                 <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}" 
+                    Content="Ага" CommandParameter="6"/>
+            <Button Grid.Column="1" Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}" 
+                    Content="Неа-а" CommandParameter="7"/>
+        </Grid>
     </DataTemplate>
     <!---->
     
-    <!--Templates-->
+    <!--Read Templates-->
     <DataTemplate DataType="{x:Type models:Service}" x:Key="ServicesTemplate">
+        <Border Style="{StaticResource ServicesBorder}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.25*"/>
+                    <ColumnDefinition Width="0.3*"/>
+                    <ColumnDefinition Width="0.3*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" 
+                            Style="{StaticResource ServicesPanel}">
+                    <Image Margin="25" Style="{StaticResource ListImage}"
+                        Source="{Binding MainImagePath,Converter={StaticResource ImagePathConvert}}">
+                        <Image.ToolTip>
+                            <TextBlock>
+                                <Run Text="{Binding Title}"/>
+                            </TextBlock>
+                        </Image.ToolTip>
+                    </Image>
+                </StackPanel>
+
+                <Label Grid.Row="0" Grid.ColumnSpan="3" Grid.Column="1" Content="{Binding Title}" 
+                    Foreground="{StaticResource FocusColor}"
+                    Style="{StaticResource Header1}"/>
+
+                <Grid Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Margin="10" Orientation="Horizontal" Grid.Row="0">
+                        <TextBlock Text="{Binding Cost,StringFormat={}{0:F2}}" Style="{StaticResource StrikeByDiscount}"/>
+                        <TextBlock Text="{Binding PriceWithDiscount,StringFormat={} {0:F2}}" Style="{StaticResource VisibleByDiscount}"/>
+                        <TextBlock Style="{StaticResource AndreiRublev}">
+                        <Run Text=" рублёв за"/>
+                            <Run Text="{Binding DurationInSeconds,Converter={StaticResource SecondsToMinuteConvert}}"/>
+                            <Run Text="минут"/>
+                        </TextBlock>
+                    </StackPanel>
+
+                    <TextBlock Margin="10" Grid.Row="1" Text="{Binding Discount,StringFormat={}* скида {0:P0}}" 
+                                Style="{StaticResource VisibleByDiscount}">
+                        <TextBlock.ToolTip>
+                            <Image Source="/Images/неважно/meme.jpg"/>
+                        </TextBlock.ToolTip>
+                    </TextBlock>
+                </Grid>
+
+                <Button Grid.Row="2" Grid.Column="1" Content="Редактировать" CommandParameter="{Binding }" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.EditService}"/>
+                <Button Grid.Row="2" Grid.Column="2" Content="Удалить" CommandParameter="{Binding }" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.DeleteService}"/>
+            </Grid>
+        </Border>
+    </DataTemplate>
+    <!---->
+    
+    <!--Edit/Add Templates-->
+    <DataTemplate DataType="{x:Type models:Service}" x:Key="ServicesEditTemplate">
         <DataTemplate.Resources>
-            <Style TargetType="TextBlock" x:Key="VisibleByDiscount">
+            <Style TargetType="TextBlock" x:Key="IdBox">
+                <Setter Property="FontStyle" Value="Italic"/>
                 <Style.Triggers>
-                    <DataTrigger  Binding="{Binding Discount}" Value="0">
+                    <DataTrigger Binding="{Binding Id}" Value="{x:Null}">
                         <Setter Property="Visibility" Value="Collapsed"/>
-                    </DataTrigger>
-                </Style.Triggers>
-            </Style>
-            <Style TargetType="Button">
-                <Style.Triggers>
-                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.IsAdmin}" Value="false">
-                        <Setter Property="Visibility" Value="Collapsed"/>
-                    </DataTrigger>
-                </Style.Triggers>
-            </Style>
-            <Style TargetType="StackPanel">
-                <Setter Property="Background" Value="LightGreen"/>
-                <Style.Triggers>
-                    <DataTrigger Binding="{Binding Discount}" Value="0">
-                        <Setter Property="Background" Value="{StaticResource AdditionalBackgr}"/>
                     </DataTrigger>
                 </Style.Triggers>
             </Style>
         </DataTemplate.Resources>
-        <StackPanel>
-            <Image Width="100" Height="100" Source="{Binding MainImagePath,Converter={StaticResource ImagePathConvert}}"/>
-            <TextBlock Text="{Binding Title}" Foreground="{StaticResource FocusColor}"/>
-            <TextBlock>
-                <Run Text="{Binding Cost,StringFormat={}{0:F2}}">
-                    <Run.Resources>
-                        <Style TargetType="Run">
-                            <Setter Property="TextDecorations" Value="Strikethrough"/>
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Discount}" Value="0">
-                                    <Setter Property="TextDecorations" Value="None"/>
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Run.Resources>
-                </Run>
-                <TextBlock Text="{Binding PriceWithDiscount,StringFormat={}{0:F2}}" Style="{StaticResource VisibleByDiscount}"/>
-                <Run Text="рублёв за"/>
-                <Run Text="{Binding DurationInSeconds,Converter={StaticResource SecondsToMinuteConvert}}"/>
-                <Run Text="минут"/>
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.1*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Margin="25" Style="{StaticResource IdBox}">
+                <Run Text="Id товара: "/>
+                <LineBreak/>
+                <Run Text="{Binding Id}"/>
             </TextBlock>
-            <TextBlock Text="{Binding Discount,StringFormat={}* скида {0:P2}}" Style="{StaticResource VisibleByDiscount}"/>
-            <Button Content="Редактировать"/>
-            <Button Content="Удалить"/>
-        </StackPanel>
+
+            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                <Label Content="Название услуги: " Style="{StaticResource Header3}"/>
+                <TextBox Margin="5" Width="Auto" Text="{Binding Title}" Style="{StaticResource placeHolder}" Tag="Название услуги..."/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                <Label Content="Цена: " Style="{StaticResource Header3}"/>
+                <TextBox Text="{Binding Cost}" Style="{StaticResource placeHolder}" Tag="Цена услуги..."/>
+            </StackPanel>
+
+            <Border Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" BorderBrush="{StaticResource FocusColor}" BorderThickness="5" 
+                    CornerRadius="5" HorizontalAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" Height="Auto" Width="Auto">
+                <Image Margin="5" Width="Auto" Height="Auto" Source="{Binding MainImagePath,Converter={StaticResource ImagePathConvert}}"/>
+            </Border>
+            
+            <Button Margin="25" Grid.Row="3" Grid.Column="0" Content="Добавить"/>
+
+            <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
+                <Label Content="Длительность: " Style="{StaticResource Header3}"/>
+                <TextBlock>
+                    <Run Text="{Binding ElementName=Time,Path=Value}"/>
+                    <Run Text="Минут."/>
+                </TextBlock>
+            </StackPanel>
+
+            <Slider Grid.Column="1" Grid.Row="2" 
+                Value="{Binding DurationInSeconds,Converter={StaticResource SecondsToMinuteConvert}}" 
+                SmallChange="1" Minimum="1" Maximum="240" Name="Time"/>
+
+            <StackPanel Grid.Row="1" Grid.Column="2" VerticalAlignment="Center">
+                <Label Content="Скидка: " Style="{StaticResource Header3}"/>
+                <TextBlock Text="{Binding ElementName=Discount,Path=Value,StringFormat={}{0:P0}}"/>
+            </StackPanel>
+
+            <Slider Grid.Row="2" Grid.Column="2" Value="{Binding Discount}" Minimum="0" LargeChange="0.1" Maximum="1" Name="Discount"/>
+
+            <StackPanel Grid.Row="3" Grid.Column="2" VerticalAlignment="Top">
+                <Label Content="Описание: " Style="{StaticResource Header3}"/>
+                <TextBox Height="30" Text="{Binding Description}"/>
+            </StackPanel>
+
+            <Button Grid.Row="3" Grid.Column="1" Content="Сохранить" Margin="25"/>
+
+            <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" Background="{StaticResource AdditionalBackgr}" Height="Auto" Width="Auto"/>
+
+        </Grid>
     </DataTemplate>
     <!---->
-    
 </ResourceDictionary>
