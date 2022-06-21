@@ -255,3 +255,41 @@ C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatyS
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MessageBox\MessageBoxWindow.baml
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\TextStyles.baml
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\Templates.baml
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\122454.png
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\96.png
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\face.png
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\makeup.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\man.png
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\mask.jpeg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\piling.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\soliarij.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\брови.png
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Гречишный массаж.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Декорирование нарощенных ресниц стразами.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Демакияж.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Депиляция воском.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Европейский маникюр.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\ИК-сауна.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Классический маникюр.png
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Комбинированный маникюр.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Контурная пластика.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\массаж.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Мезотерапия.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Моделирование ресниц.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\ногти.png
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Окрашивание бровей.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Парафинотерапия.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Покрытие ногтей гель-лаком.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Полировка ногтей.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Прессотерапия.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Прокол ушей пистолетом.png
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Ресницы.png
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Снятие ресниц.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Стоун-терапия.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\стрижка.png
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Укрепление ногтей гелем.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Шугаринг.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Экспресс SPA.png
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Экспресс-педикюр.jpg
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\TextStyles.baml
+C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\Templates.baml
