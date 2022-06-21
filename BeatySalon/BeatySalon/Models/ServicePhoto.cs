@@ -10,7 +10,10 @@ namespace BeatySalon.Models
         public int Id { get; set; }
         public int ServiceId { get; set; }
         public string PhotoPath { get; set; }
-
+        public void Delete()
+        {
+            Session.Context.ServicePhotos.Local.Remove(this);
+        }
         public virtual Service Service { get; set; }
     }
 }

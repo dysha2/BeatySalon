@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BeatySalon.Views"
         xmlns:VM="clr-namespace:BeatySalon.ViewModels"
         mc:Ignorable="d" 
-        Title="MainWindow" Height="450" Width="528" Style="{StaticResource WinAll}">
+        Title="Сервисы" Height="450" Width="528" Style="{StaticResource WinAll}">
     <Window.DataContext>
         <VM:MainVM/>
     </Window.DataContext>

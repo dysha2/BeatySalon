@@ -4,13 +4,22 @@
     <!--MessageBox Templates-->
     <DataTemplate x:Key="MessageBoxOKTemplate">
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.Close}" 
-                    Content="ОК" CommandParameter="{Binding ElementName=MessageWindow}"/>
+            <Button Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}" 
+                    Content="ОК" CommandParameter="1"/>
+        </StackPanel>
+    </DataTemplate>
+    
+    <DataTemplate x:Key="MessageBoxYesNoTemplate">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}" 
+                    Content="Yes" CommandParameter="6"/>
+            <Button Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}" 
+                    Content="No" CommandParameter="7"/>
         </StackPanel>
     </DataTemplate>
     <!---->
     
-    <!--Templates-->
+    <!--Read Templates-->
     <DataTemplate DataType="{x:Type models:Service}" x:Key="ServicesTemplate">
         <DataTemplate.Resources>
             <Style TargetType="TextBlock" x:Key="VisibleByDiscount">
@@ -58,10 +67,34 @@
                 <Run Text="минут"/>
             </TextBlock>
             <TextBlock Text="{Binding Discount,StringFormat={}* скида {0:P2}}" Style="{StaticResource VisibleByDiscount}"/>
-            <Button Content="Редактировать"/>
-            <Button Content="Удалить"/>
+            <Button Content="Редактировать" CommandParameter="{Binding }" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.EditService}"/>
+            <Button Content="Удалить" CommandParameter="{Binding }" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.DeleteService}"/>
         </StackPanel>
     </DataTemplate>
     <!---->
     
+    <!--Edit/Add Templates-->
+    <DataTemplate DataType="{x:Type models:Service}" x:Key="ServicesEditTemplate">
+        <DataTemplate.Resources>
+            <Style TargetType="TextBox" x:Key="IdBox">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding Id}" Value="{x:Null}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </DataTemplate.Resources>
+        <StackPanel>
+            <TextBox Text="{Binding Id}" IsReadOnly="True" Style="{StaticResource IdBox}"/>
+            <TextBox Text="{Binding Title}"/>
+            <TextBox Text="{Binding Cost}"/>
+            <TextBlock Text="{Binding ElementName=Time,Path=Value}"/>
+            <Slider Value="{Binding DurationInSeconds,Converter={StaticResource SecondsToMinuteConvert}}" SmallChange="1" Minimum="1" Maximum="240" Name="Time"/>
+            <TextBlock Text="{Binding ElementName=Discount,Path=Value,StringFormat={}{0:P0}}"/>
+            <Slider Value="{Binding Discount}" Minimum="0" LargeChange="0.1" Maximum="1" Name="Discount"/>
+            <TextBox Text="{Binding Description}"/>
+            <Image Source="{Binding MainImagePath,Converter={StaticResource ImagePathConvert}}"/>
+        </StackPanel>
+    </DataTemplate>
+    <!---->
 </ResourceDictionary>

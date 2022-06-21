@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\App.xaml
-7-1071084337
+8-2135774140
 37154781892
-26-1831478169
+30-485660454
 217-1228816964
-Styles\ButtonStyles.xaml;Styles\Dictionary1.xaml;Styles\Templates.xaml;Styles\TextStyles.xaml;Views\AuthorizationWindow.xaml;Views\MainWindow.xaml;Views\MessageBox\MessageBoxWindow.xaml;
+Styles\ButtonStyles.xaml;Styles\Dictionary1.xaml;Styles\Templates.xaml;Styles\TextStyles.xaml;Views\AuthorizationWindow.xaml;Views\EditWindow.xaml;Views\MainWindow.xaml;Views\MessageBox\MessageBoxWindow.xaml;
 
 False
 

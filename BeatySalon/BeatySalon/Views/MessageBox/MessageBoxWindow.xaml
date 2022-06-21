@@ -4,20 +4,21 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BeatySalon.Views.MessageBox"                         
-        xmlns:VM="clr-namespace:BeatySalon.ViewModels" 
+        xmlns:VM="clr-namespace:BeatySalon.ViewModels"
+        xmlns:selector="clr-namespace:BeatySalon.Selectors"
         mc:Ignorable="d" d:DataContext="{d:DesignInstance {x:Type VM:MessageVM}}"
-        Title="{Binding Title}" Height="150" Width="600" ResizeMode="NoResize" Style="{StaticResource WinAll}" Name="MessageWindow">
-
-    <Window.Resources>
-
-    </Window.Resources>
-    
+        Title="{Binding Title}" Height="150" Width="600" ResizeMode="NoResize" Style="{StaticResource WinAll}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="1.5*"/>
         </Grid.RowDefinitions>
         <TextBlock Text="{Binding Message}" TextWrapping="WrapWithOverflow" Margin="10"/>
-        <ContentControl ContentTemplate="{StaticResource MessageBoxOKTemplate}" Grid.Row="1" Height="Auto" Width="Auto"/>
+        <ContentControl Content="{Binding Type}"  Grid.Row="1" Height="Auto" Width="Auto">
+            <ContentControl.ContentTemplateSelector>
+                <selector:MessageBoxSelector JustInfoTemplate="{StaticResource MessageBoxOKTemplate}"
+                                             YesNoTemplate="{StaticResource MessageBoxYesNoTemplate}"/>
+            </ContentControl.ContentTemplateSelector>
+        </ContentControl>
     </Grid>
 </Window>

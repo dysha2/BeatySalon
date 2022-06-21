@@ -28,7 +28,7 @@ namespace BeatySalon.ViewModels
                 else
                 {
                     MessageVM messageVM = new MessageVM();
-                    messageVM.ToShowMessageBoxWindow("Ошибка", "Введён неправильный пароль", MessageType.JustInfo);
+                    messageVM.Show("Ошибка", "Введён неправильный пароль", MessageType.JustInfo);
                 }
             }
         }

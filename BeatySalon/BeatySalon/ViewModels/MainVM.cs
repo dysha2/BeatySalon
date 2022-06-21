@@ -26,10 +26,12 @@ namespace BeatySalon.ViewModels
             };
             IsAdmin = Session.IsAdmin;
             _Services = Session.Context.Services.Local.ToObservableCollection();
-            SetServices(5);
+            _filter = 5;
+            SetServices(_filter);
         }
 
         #region Fields
+        private int _filter;
         private string searchString;
         private bool sortMode;
         private string[] FilterVariants;
@@ -62,6 +64,7 @@ namespace BeatySalon.ViewModels
         #region Methods
         private void SetServices(int FilterMode)
         {
+            _filter = FilterMode;
             var filter = FilterVariants[FilterMode].Split(' ');
             var services = _Services.Where(x => x.Discount >= Double.Parse(filter[0]) && x.Discount < Double.Parse(filter[1]));
             Services = new ListCollectionView(services.ToList());
@@ -87,7 +90,8 @@ namespace BeatySalon.ViewModels
 
         #region Commands
         private RelayCommand _SetFilter;
-
+        private RelayCommand _DeleteService;
+        private RelayCommand _EditService;
 
         public RelayCommand SetFilter
         {
@@ -96,6 +100,46 @@ namespace BeatySalon.ViewModels
                 return _SetFilter ?? (_SetFilter = new RelayCommand(obj =>
                 {
                     SetServices(int.Parse(obj.ToString()));
+                }));
+            }
+        }
+        public RelayCommand EditService
+        {
+            get
+            {
+                return _EditService ?? (_EditService = new RelayCommand(obj =>
+                 {
+                     EditVM editVM = new EditVM(obj);
+                 }));
+            }
+        }
+        public RelayCommand DeleteService
+        {
+            get
+            {
+                return _DeleteService ?? (_DeleteService = new RelayCommand(obj =>
+                {
+                    MessageVM messageVM = new MessageVM();
+                    var Service = obj as Service;
+                    if (Service.ServicePhotos.Count() > 0)
+                    {
+                        var result = messageVM.Show("Пердуперждение", 
+                            "Для этого сервиса имеются дополнительные фотографии. Продолжить удаление?", 
+                            MessageType.YesNo);
+                        if (result == System.Windows.MessageBoxResult.No)
+                        {
+                            return; 
+                        }
+                    }
+                    try
+                    {
+                        Service.Delete();
+                        SetServices(_filter);
+                    }
+                    catch (Exception ex)
+                    {
+                        messageVM.Show("Ошибка", ex.Message, MessageType.JustInfo);
+                    }
                 }));
             }
         }
