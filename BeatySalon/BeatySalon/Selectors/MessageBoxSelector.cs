@@ -9,7 +9,7 @@ using System.Windows.Controls;
 
 namespace BeatySalon.Selectors
 {
-    internal class MessageBoxSelector:DataTemplateSelector
+    public class MessageBoxSelector:DataTemplateSelector
     {
         public DataTemplate JustInfoTemplate { get; set; }
         public DataTemplate YesNoTemplate { get; set; }

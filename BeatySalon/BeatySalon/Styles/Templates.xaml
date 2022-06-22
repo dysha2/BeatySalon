@@ -3,19 +3,32 @@
                     xmlns:models="clr-namespace:BeatySalon.Models">
     <!--MessageBox Templates-->
     <DataTemplate x:Key="MessageBoxOKTemplate">
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}" 
-                    Content="ОК" CommandParameter="1"/>
-        </StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}" 
+                        Content="ОК" CommandParameter="1"/>
+            </StackPanel>
+        </Grid>
     </DataTemplate>
     
     <DataTemplate x:Key="MessageBoxYesNoTemplate">
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}" 
-                    Content="Yes" CommandParameter="6"/>
-            <Button Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}" 
-                    Content="No" CommandParameter="7"/>
-        </StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                 <ColumnDefinition/>
+                 <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}" 
+                    Content="Ага" CommandParameter="6"/>
+            <Button Grid.Column="1" Width="100" Height="50" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}" 
+                    Content="Неа-а" CommandParameter="7"/>
+        </Grid>
     </DataTemplate>
     <!---->
     
@@ -37,7 +50,7 @@
 
                 <StackPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" 
                             Style="{StaticResource ServicesPanel}">
-                    <Image Margin="25"
+                    <Image Margin="25" Style="{StaticResource ListImage}"
                         Source="{Binding MainImagePath,Converter={StaticResource ImagePathConvert}}">
                         <Image.ToolTip>
                             <TextBlock>
@@ -84,7 +97,8 @@
     <!--Edit/Add Templates-->
     <DataTemplate DataType="{x:Type models:Service}" x:Key="ServicesEditTemplate">
         <DataTemplate.Resources>
-            <Style TargetType="TextBox" x:Key="IdBox">
+            <Style TargetType="TextBlock" x:Key="IdBox">
+                <Setter Property="FontStyle" Value="Italic"/>
                 <Style.Triggers>
                     <DataTrigger Binding="{Binding Id}" Value="{x:Null}">
                         <Setter Property="Visibility" Value="Collapsed"/>
@@ -92,17 +106,75 @@
                 </Style.Triggers>
             </Style>
         </DataTemplate.Resources>
-        <StackPanel>
-            <TextBox Text="{Binding Id}" IsReadOnly="True" Style="{StaticResource IdBox}"/>
-            <TextBox Text="{Binding Title}"/>
-            <TextBox Text="{Binding Cost}"/>
-            <TextBlock Text="{Binding ElementName=Time,Path=Value}"/>
-            <Slider Value="{Binding DurationInSeconds,Converter={StaticResource SecondsToMinuteConvert}}" SmallChange="1" Minimum="1" Maximum="240" Name="Time"/>
-            <TextBlock Text="{Binding ElementName=Discount,Path=Value,StringFormat={}{0:P0}}"/>
-            <Slider Value="{Binding Discount}" Minimum="0" LargeChange="0.1" Maximum="1" Name="Discount"/>
-            <TextBox Text="{Binding Description}"/>
-            <Image Source="{Binding MainImagePath,Converter={StaticResource ImagePathConvert}}"/>
-        </StackPanel>
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.1*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Margin="25" Style="{StaticResource IdBox}">
+                <Run Text="Id товара: "/>
+                <LineBreak/>
+                <Run Text="{Binding Id}"/>
+            </TextBlock>
+
+            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                <Label Content="Название услуги: " Style="{StaticResource Header3}"/>
+                <TextBox Margin="5" Width="Auto" Text="{Binding Title}" Style="{StaticResource placeHolder}" Tag="Название услуги..."/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                <Label Content="Цена: " Style="{StaticResource Header3}"/>
+                <TextBox Text="{Binding Cost}" Style="{StaticResource placeHolder}" Tag="Цена услуги..."/>
+            </StackPanel>
+
+            <Border Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" BorderBrush="{StaticResource FocusColor}" BorderThickness="5" 
+                    CornerRadius="5" HorizontalAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" Height="Auto" Width="Auto">
+                <Image Margin="5" Width="Auto" Height="Auto" Source="{Binding MainImagePath,Converter={StaticResource ImagePathConvert}}"/>
+            </Border>
+
+            
+            <Button Margin="25" Grid.Row="3" Grid.Column="0" Height="50" Content="Добавить"/>
+
+            <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
+                <Label Content="Длительность: " Style="{StaticResource Header3}"/>
+                <TextBlock>
+                    <Run Text="{Binding ElementName=Time,Path=Value}"/>
+                    <Run Text="Минут."/>
+                </TextBlock>
+            </StackPanel>
+
+            <Slider Grid.Column="1" Grid.Row="2" 
+                Value="{Binding DurationInSeconds,Converter={StaticResource SecondsToMinuteConvert}}" 
+                SmallChange="1" Minimum="1" Maximum="240" Name="Time"/>
+
+            <StackPanel Grid.Row="1" Grid.Column="2" VerticalAlignment="Center">
+                <Label Content="Скидка: " Style="{StaticResource Header3}"/>
+                <TextBlock Text="{Binding ElementName=Discount,Path=Value,StringFormat={}{0:P0}}"/>
+            </StackPanel>
+
+            <Slider Grid.Row="2" Grid.Column="2" Value="{Binding Discount}" Minimum="0" LargeChange="0.1" Maximum="1" Name="Discount"/>
+
+            <StackPanel Grid.Row="3" Grid.Column="2" VerticalAlignment="Top">
+                <Label Content="Описание: " Style="{StaticResource Header3}"/>
+                <TextBox Height="30" Text="{Binding Description}"/>
+            </StackPanel>
+
+            <Button Grid.Row="3" Grid.Column="1" Content="Сохранить" Height="50" Margin="25" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}"/>
+
+            <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" Background="{StaticResource AdditionalBackgr}" Height="Auto" Width="Auto"/>
+
+        </Grid>
     </DataTemplate>
     <!---->
 </ResourceDictionary>

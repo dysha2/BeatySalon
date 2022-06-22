@@ -39,7 +39,7 @@
     <!---->
 
     <!--Image Styles-->
-    <Style TargetType="Image">
+    <Style TargetType="Image" x:Key="ListImage">
         <Setter Property="MaxHeight" Value="200"/>
         <Setter Property="MinHeight" Value="200"/>
         <Setter Property="Width" Value="200"/>

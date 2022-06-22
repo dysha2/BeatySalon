@@ -7,13 +7,14 @@
         xmlns:VM="clr-namespace:BeatySalon.ViewModels"
         xmlns:selector="clr-namespace:BeatySalon.Selectors"
         mc:Ignorable="d" d:DataContext="{d:DesignInstance {x:Type VM:MessageVM}}"
-        Title="{Binding Title}" Height="150" Width="600" ResizeMode="NoResize" Style="{StaticResource WinAll}">
+        Title="{Binding Title}" Height="200" Width="600" ResizeMode="NoResize" Style="{StaticResource WinAll}">
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="1.5*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="{Binding Message}" TextWrapping="WrapWithOverflow" Margin="10"/>
+        <TextBlock HorizontalAlignment="Center" Text="{Binding Message}" TextWrapping="WrapWithOverflow" Margin="10"/>
         <ContentControl Content="{Binding Type}"  Grid.Row="1" Height="Auto" Width="Auto">
             <ContentControl.ContentTemplateSelector>
                 <selector:MessageBoxSelector JustInfoTemplate="{StaticResource MessageBoxOKTemplate}"
