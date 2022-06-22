@@ -23,7 +23,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Label Style="{StaticResource Header1}" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Добро пождаловать в салон красоты."/>
+        <Label Style="{StaticResource Header2}" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Добро пождаловать в салон красоты."/>
         <Button Grid.Row="2" Margin="25" Content="Войти" Command="{Binding LetsIn}" CommandParameter="{Binding ElementName=AuthWindow}"/>
 
         <TextBox Grid.Row="1" Grid.Column="1" Margin="25,0,25,0" Text="{Binding Password}" Style="{StaticResource placeHolder}" Tag="Секретик..."/>
