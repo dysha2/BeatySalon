@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
+using System.Windows.Media.Imaging;
 
 namespace BeatySalon.Converters
 {
@@ -13,7 +14,7 @@ namespace BeatySalon.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return $"{Environment.CurrentDirectory}\\Images\\{value.ToString()}";
+            return new BitmapImage(new Uri($"{Environment.CurrentDirectory}\\Images\\{value.ToString()}"));
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

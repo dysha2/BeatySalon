@@ -120,6 +120,7 @@
                 <RowDefinition Height="0.5*"/>
                 <RowDefinition Height="0.5*"/>
                 <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
             <TextBlock Margin="25" Style="{StaticResource IdBox}">
@@ -144,7 +145,8 @@
             </Border>
 
             
-            <Button Margin="25" Grid.Row="3" Grid.Column="0" Height="50" Content="Добавить"/>
+            <Button Margin="25" Grid.Row="3" Grid.Column="0" Height="50" Content="Изменить" CommandParameter="{Binding }"
+                    Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ChangeImage}"/>
 
             <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
                 <Label Content="Длительность: " Style="{StaticResource Header3}"/>
@@ -173,7 +175,17 @@
             <Button Grid.Row="3" Grid.Column="1" Content="Сохранить" Height="50" Margin="25" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}"/>
 
             <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" Background="{StaticResource AdditionalBackgr}" Height="Auto" Width="Auto"/>
-
+            <ListBox ItemsSource="{Binding ServicePhotos}" Grid.Row="5">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Image Width="100" Height="100" Source="{Binding PhotoPath,Converter={StaticResource ImagePathConvert}}"/>
+                            <Button Content="Изменить" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ChangeImage}" CommandParameter="{Binding }"/>
+                            <Button Content="Удалить" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.DeleteImage}" CommandParameter="{Binding }"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </Grid>
     </DataTemplate>
     <!---->

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Prism.Mvvm;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -6,8 +7,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BeatySalon.Models
 {
-    public partial class Service
+    public partial class Service:BindableBase
     {
+        private string mainImagePath;
+
         public Service()
         {
             ClientServices = new HashSet<ClientService>();
@@ -20,13 +23,17 @@ namespace BeatySalon.Models
         public int DurationInSeconds { get; set; }
         public string Description { get; set; }
         public double? Discount { get; set; }
-        public string MainImagePath { get; set; }
+        public string MainImagePath { get => mainImagePath; 
+            set { 
+                mainImagePath = value; RaisePropertyChanged(); 
+            } 
+        }
         [NotMapped]
         public decimal PriceWithDiscount
         {
             get
             {
-                decimal discount =decimal.Parse((1-Discount).ToString());
+                decimal discount = decimal.Parse((1 - Discount).ToString());
                 return Cost * discount;
             }
         }
@@ -39,7 +46,8 @@ namespace BeatySalon.Models
             if (ClientServices.Count > 0)
             {
                 throw new Exception("На эту услуги есть записанные клиенты");
-            } else
+            }
+            else
             {
                 Session.Context.Services.Local.Remove(this);
             }
