@@ -55,7 +55,7 @@ namespace BeatySalon.Views.MessageBox {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BeatySalon;component/views/messagebox/messageboxwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BeatySalon;V1.0.0.0;component/views/messagebox/messageboxwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\MessageBox\MessageBoxWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
