@@ -8,6 +8,7 @@
         mc:Ignorable="d" 
         Title="Список услуг" Height="600" Width="800" MinHeight="400" MinWidth="600"
         Style="{StaticResource WinAll}">
+    
     <Window.DataContext>
         <VM:MainVM/>
     </Window.DataContext>
@@ -16,6 +17,10 @@
         <Menu DockPanel.Dock="Top">
             <Menu.Resources>
                 <Style TargetType="MenuItem" x:Key="VisibleByAdmin">
+                    <Setter Property="Foreground" Value="{StaticResource FocusColor}"/>
+                    <Setter Property="FontSize" Value="14"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="Background" Value="{StaticResource AdditionalBackgr}"/>
                     <Style.Triggers>
                         <DataTrigger Binding="{Binding IsAdmin}" Value="false">
                             <Setter Property="Visibility" Value="Collapsed"/>
@@ -33,6 +38,7 @@
             </MenuItem>
             <MenuItem Header="Сохранить" Command="{Binding SaveChanges}"/>
             <MenuItem Header="Ближние записи" Style="{StaticResource VisibleByAdmin}" Command="{Binding NearEntries}"/>
+            <MenuItem Header="Добавить абобуса"/>
         </Menu>
         <TextBox Margin="12,12,26,12" Text="{Binding SearchString,UpdateSourceTrigger=PropertyChanged}"  Style="{StaticResource placeHolder}" Tag="Найти..." DockPanel.Dock="Top"/>
         <CheckBox Margin="12,0,0,0" Content="Сортировка по убыванию" DockPanel.Dock="Top" IsThreeState="False" IsChecked="{Binding SortMode}"/>

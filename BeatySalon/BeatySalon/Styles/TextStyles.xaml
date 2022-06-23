@@ -62,6 +62,11 @@
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Foreground" Value="{StaticResource FocusColor}"/>
     </Style>
+    <Style TargetType="Label" x:Key="Header4">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
     <!---->
 
     <!--TextBlock STYLES-->
