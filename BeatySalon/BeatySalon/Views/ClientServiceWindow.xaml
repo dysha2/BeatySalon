@@ -25,7 +25,7 @@
 
         <Label HorizontalAlignment="Center" Grid.RowSpan="2" Content="Выбранная услуга" Style="{StaticResource Header3}"/>
 
-        <TextBlock FontStyle="Italic" Margin="25" Grid.Column="1" HorizontalAlignment="Center">
+        <TextBlock FontStyle="Italic" Grid.Column="1" HorizontalAlignment="Center">
             <Run Text="{Binding SelectedService.Title}"/>
         </TextBlock>
 
