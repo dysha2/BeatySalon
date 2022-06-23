@@ -14,6 +14,15 @@
     
     <DockPanel>
         <Menu DockPanel.Dock="Top">
+            <Menu.Resources>
+                <Style TargetType="MenuItem" x:Key="VisibleByAdmin">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsAdmin}" Value="false">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Menu.Resources>
             <MenuItem Header="Фильтрация">
                 <MenuItem Header="От 0% до 5%" Command ="{Binding SetFilter}" CommandParameter="0"/>
                 <MenuItem Header="От 5% до 15%" Command ="{Binding SetFilter}" CommandParameter="1"/>
@@ -22,6 +31,8 @@
                 <MenuItem Header="От 70% до 100%" Command ="{Binding SetFilter}" CommandParameter="4"/>
                 <MenuItem Header="Все" Command ="{Binding SetFilter}" CommandParameter="5"/>
             </MenuItem>
+            <MenuItem Header="Сохранить" Command="{Binding SaveChanges}"/>
+            <MenuItem Header="Ближние записи" Style="{StaticResource VisibleByAdmin}"/>
         </Menu>
         <TextBox Margin="12,12,26,12" Text="{Binding SearchString,UpdateSourceTrigger=PropertyChanged}"  Style="{StaticResource placeHolder}" Tag="Найти..." DockPanel.Dock="Top"/>
         <CheckBox Margin="12,0,0,0" Content="Сортировка по убыванию" DockPanel.Dock="Top" IsThreeState="False" IsChecked="{Binding SortMode}"/>
@@ -31,7 +42,7 @@
             <Run Text="из"/>
             <Run Text="{Binding ServicesCount,Mode=OneWay}"/>
         </TextBlock>
-        <ListBox ItemsSource="{Binding Services}" ItemTemplate="{StaticResource ServicesTemplate}"
+        <ListBox ItemsSource="{Binding Services}" ItemTemplate="{StaticResource ServicesTemplate}" SelectedItem="{Binding SelectedService}"
                  Name="ServicesListBox" HorizontalContentAlignment="Stretch"/>
     </DockPanel>
 </Window>

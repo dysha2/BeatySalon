@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace BeatySalon.ViewModels
 {
@@ -71,6 +72,17 @@ namespace BeatySalon.ViewModels
                 {
                     ((ServicePhoto)obj).Delete();
                     RaisePropertyChanged(nameof(Item));
+                });
+            }
+        }
+        public RelayCommand ResultMessage
+        {
+            get
+            {
+                return new RelayCommand(obj =>
+                {
+                    Session.Context.SaveChanges();
+                    ((Window)obj).Close();
                 });
             }
         }
