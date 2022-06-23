@@ -5,6 +5,7 @@
     <!--Converters-->
     <converters:ImagePathConverter x:Key="ImagePathConvert"/>
     <converters:SecondsToMinuteConverter x:Key="SecondsToMinuteConvert"/>
+    <converters:TimeToStartConverter x:Key="TimeToStartConvert"/>
     <!---->
     
     <!--Colors-->

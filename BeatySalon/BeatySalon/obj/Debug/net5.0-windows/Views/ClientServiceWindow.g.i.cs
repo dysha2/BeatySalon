@@ -54,7 +54,7 @@ namespace BeatySalon.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BeatySalon;V1.0.0.0;component/views/clientservicewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BeatySalon;component/views/clientservicewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\ClientServiceWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -114,3 +114,5 @@ C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatyS
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\ref\BeatySalon.dll
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.pdb
 C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.genruntimeconfig.cache
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\NearEntries.g.cs
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\NearEntries.baml

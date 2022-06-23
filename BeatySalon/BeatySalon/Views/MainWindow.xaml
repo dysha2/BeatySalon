@@ -32,7 +32,7 @@
                 <MenuItem Header="Все" Command ="{Binding SetFilter}" CommandParameter="5"/>
             </MenuItem>
             <MenuItem Header="Сохранить" Command="{Binding SaveChanges}"/>
-            <MenuItem Header="Ближние записи" Style="{StaticResource VisibleByAdmin}"/>
+            <MenuItem Header="Ближние записи" Style="{StaticResource VisibleByAdmin}" Command="{Binding NearEntries}"/>
         </Menu>
         <TextBox Margin="12,12,26,12" Text="{Binding SearchString,UpdateSourceTrigger=PropertyChanged}"  Style="{StaticResource placeHolder}" Tag="Найти..." DockPanel.Dock="Top"/>
         <CheckBox Margin="12,0,0,0" Content="Сортировка по убыванию" DockPanel.Dock="Top" IsThreeState="False" IsChecked="{Binding SortMode}"/>
