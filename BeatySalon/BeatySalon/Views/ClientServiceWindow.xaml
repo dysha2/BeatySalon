@@ -6,11 +6,37 @@
         xmlns:local="clr-namespace:BeatySalon.Views"
         xmlns:VM="clr-namespace:BeatySalon.ViewModels"
         mc:Ignorable="d" d:DataContext="{d:DesignInstance {x:Type VM:MainVM}}"
-        Title="ClientServiceWindow" Height="450" Width="800" Style="{StaticResource WinAll}">
-    <StackPanel>
-        <TextBlock Text="{Binding SelectedService.Title}"/>
-        <TextBlock Text="{Binding SelectedService.DurationInSeconds,Converter={StaticResource SecondsToMinuteConvert}}"/>
-        <ComboBox ItemsSource="{Binding Clients}" SelectedItem="{Binding ClientService.Client}">
+        Title="Добавление заявки" Height="500" Width="400" ResizeMode="NoResize" Style="{StaticResource WinAll}">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label HorizontalAlignment="Center" Grid.RowSpan="2" Content="Выбранная услуга" Style="{StaticResource Header3}"/>
+
+        <TextBlock FontStyle="Italic" Grid.Column="1" HorizontalAlignment="Center">
+            <Run Text="{Binding SelectedService.Title}"/>
+        </TextBlock>
+
+        <TextBlock FontStyle="Italic" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1">
+            <Run Text="{Binding SelectedService.DurationInSeconds,Converter={StaticResource SecondsToMinuteConvert}}"/>
+            <Run Text="минут."/>
+        </TextBlock>
+        
+        <Label HorizontalAlignment="Center" Grid.Row="2" Content="Клиент" Style="{StaticResource Header3}"/>
+        
+        <ComboBox Margin="25" Grid.Row="2" Grid.Column="1" ItemsSource="{Binding Clients}" SelectedItem="{Binding ClientService.Client}">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -21,9 +47,12 @@
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
-        <DatePicker SelectedDate="{Binding Date}"/>
-        <TextBox Text="{Binding Hours}"/>
-        <TextBox Text="{Binding Minutes}"/>
-        <Button Content="Save" Command="{Binding AddClientService}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"/>
-    </StackPanel>
+        
+        <Label HorizontalAlignment="Center" Grid.Row="4" Content="Часов" Style="{StaticResource Header3}"/>
+        <Label HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" Content="Минут" Style="{StaticResource Header3}"/>
+        <DatePicker Margin="25" Grid.Row="3" Grid.ColumnSpan="2" SelectedDate="{Binding Date}"/>
+        <TextBox HorizontalAlignment="Center" Height="30" Width="150" Grid.Row="5" Text="{Binding Hours}"/>
+        <TextBox HorizontalAlignment="Center" Height="30" Width="150"  Grid.Row="5" Grid.Column="1" Text="{Binding Minutes}"/>
+        <Button Grid.Row="6" Grid.ColumnSpan="2" Margin="20" Content="Сохранить" Command="{Binding AddClientService}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"/>
+    </Grid>
 </Window>

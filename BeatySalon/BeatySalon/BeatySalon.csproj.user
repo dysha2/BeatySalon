@@ -19,6 +19,9 @@
     <Compile Update="Views\MessageBox\MessageBoxWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\NearEntries.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Styles\ButtonStyles.xaml">
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MessageBox\MessageBoxWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NearEntries.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

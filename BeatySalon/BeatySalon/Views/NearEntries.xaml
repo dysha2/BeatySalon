@@ -1,0 +1,23 @@
+﻿<Window x:Class="BeatySalon.Views.NearEntries"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BeatySalon.Views"
+        xmlns:VM="clr-namespace:BeatySalon.ViewModels"
+        mc:Ignorable="d" d:DataContext="{d:DesignInstance{x:Type VM:MainVM}}"
+        Title="NearEntries" Height="450" Width="800">
+    <ListBox ItemsSource="{Binding Entries}">
+        <ListBox.ItemTemplate>
+            <DataTemplate>
+                <StackPanel>
+                    <TextBlock Text="{Binding Client.FirstName}"/>
+                    <TextBlock Text="{Binding Client.Email}"/>
+                    <TextBlock Text="{Binding Client.Phone}"/>
+                    <TextBlock Text="{Binding StartTime}"/>
+                    <TextBlock Text="{Binding StartTime,Converter={StaticResource TimeToStartConvert}}"/>
+                </StackPanel>
+            </DataTemplate>
+        </ListBox.ItemTemplate>
+    </ListBox>
+</Window>
