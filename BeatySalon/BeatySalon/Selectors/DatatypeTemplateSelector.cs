@@ -14,6 +14,7 @@ namespace BeatySalon.Selectors
         public DataTemplate ServiceEdit { get; set; }
         public override DataTemplate SelectTemplate(object item, DependencyObject container)
         {
+            if (item == null) return ServiceEdit;
             switch (item.GetType().Name)
             {
                 case nameof(Service): return ServiceEdit;

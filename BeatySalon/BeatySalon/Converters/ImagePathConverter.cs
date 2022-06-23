@@ -14,6 +14,7 @@ namespace BeatySalon.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
+            if (value == null) return new BitmapImage(new Uri($"{Environment.CurrentDirectory}\\Images\\Услуги салона красоты\\null.jpg"));
             return new BitmapImage(new Uri($"{Environment.CurrentDirectory}\\Images\\{value.ToString()}"));
         }
 

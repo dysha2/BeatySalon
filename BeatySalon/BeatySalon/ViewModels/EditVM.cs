@@ -15,11 +15,12 @@ namespace BeatySalon.ViewModels
     internal class EditVM : BindableBase
     {
         private object item;
+        private EditWindow editWindow;
 
         public EditVM(object item)
         {
             Item = item;
-            EditWindow editWindow = new EditWindow();
+            editWindow = new EditWindow();
             editWindow.DataContext = this;
             editWindow.ShowDialog();
         }
@@ -54,7 +55,7 @@ namespace BeatySalon.ViewModels
                         {
                             case nameof(Service):
                                 ((Service)obj).MainImagePath = NewImage;
-                            break;
+                                break;
                             case nameof(ServicePhoto):
                                 ((ServicePhoto)obj).PhotoPath = NewImage;
                                 break;
@@ -70,7 +71,12 @@ namespace BeatySalon.ViewModels
             {
                 return new RelayCommand(obj =>
                 {
+                    //editWindow.Close();
+                    //editWindow = new EditWindow();
                     ((ServicePhoto)obj).Delete();
+                    //((Service)Item);
+                    //editWindow.DataContext = this;
+                    //editWindow.ShowDialog();
                     RaisePropertyChanged(nameof(Item));
                 });
             }
@@ -83,6 +89,25 @@ namespace BeatySalon.ViewModels
                 {
                     Session.Context.SaveChanges();
                     ((Window)obj).Close();
+                });
+            }
+        }
+        public RelayCommand AddImage
+        {
+            get
+            {
+                return new RelayCommand(obj =>
+                {
+                    ServicePhoto servicePhoto = new ServicePhoto()
+                    {
+                        Service = (Service)Item,
+                        PhotoPath = "Услуги салона красоты\\null.jpg"
+                    };
+                    editWindow.Close();
+                    editWindow = new EditWindow();
+                    Session.Context.ServicePhotos.Local.Add(servicePhoto);
+                    editWindow.DataContext = this;
+                    editWindow.ShowDialog();
                 });
             }
         }

@@ -62,7 +62,6 @@ namespace BeatySalon.ViewModels
         #region Fields
         private DispatcherTimer SetterEntries;
         private NearEntries NearWindow = new NearEntries();
-        private ClientServiceWindow clientServiceWindow;
         private int _filter;
         private string searchString;
         private bool sortMode;
@@ -246,6 +245,19 @@ namespace BeatySalon.ViewModels
                     NearWindow = new NearEntries();
                     NearWindow.DataContext = this;
                     NearWindow.Show();
+                });
+            }
+        }
+        public RelayCommand AddService
+        {
+            get
+            {
+                return new RelayCommand(obj =>
+                {
+                    Service service = new Service();
+                    EditVM editVM = new EditVM(service);
+                    _Services.Add(service);
+                    SetServices(_filter);
                 });
             }
         }

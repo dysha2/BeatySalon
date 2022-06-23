@@ -116,3 +116,121 @@ C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-
 C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.pdb
 C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.genruntimeconfig.cache
 C:\Users\dimas\Desktop\Saloon\BeatySalon\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\ref\BeatySalon.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Logo\beauty_logo.ico
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\неважно\meme.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\122454.png
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\96.png
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\face.png
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\makeup.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\man.png
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\mask.jpeg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\piling.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\soliarij.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\брови.png
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Гречишный массаж.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Декорирование нарощенных ресниц стразами.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Демакияж.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Депиляция воском.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Европейский маникюр.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\ИК-сауна.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Классический маникюр.png
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Комбинированный маникюр.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Контурная пластика.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\массаж.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Мезотерапия.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Моделирование ресниц.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\ногти.png
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Окрашивание бровей.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Парафинотерапия.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Покрытие ногтей гель-лаком.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Полировка ногтей.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Прессотерапия.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Прокол ушей пистолетом.png
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Ресницы.png
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Снятие ресниц.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Стоун-терапия.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\стрижка.png
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Укрепление ногтей гелем.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Шугаринг.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Экспресс SPA.png
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Images\Услуги салона красоты\Экспресс-педикюр.jpg
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\BeatySalon.exe
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\BeatySalon.deps.json
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\BeatySalon.runtimeconfig.json
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\BeatySalon.runtimeconfig.dev.json
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\BeatySalon.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\ref\BeatySalon.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\BeatySalon.pdb
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Humanizer.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Identity.Client.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Prism.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\Prism.Wpf.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\System.Runtime.Caching.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.csproj.AssemblyReference.cache
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\ButtonStyles.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\TextStyles.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\AuthorizationWindow.g.cs
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\ClientServiceWindow.g.cs
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\EditWindow.g.cs
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MainWindow.g.cs
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MessageBox\MessageBoxWindow.g.cs
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\NearEntries.g.cs
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon_Content.g.cs
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon_MarkupCompile.cache
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon_MarkupCompile.lref
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\App.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\Dictionary1.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Styles\Templates.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\AuthorizationWindow.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\ClientServiceWindow.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\EditWindow.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MainWindow.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\MessageBox\MessageBoxWindow.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\Views\NearEntries.baml
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.g.resources
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.AssemblyInfoInputs.cache
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.AssemblyInfo.cs
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.csproj.CoreCompileInputs.cache
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.csproj.CopyComplete
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\ref\BeatySalon.dll
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.pdb
+C:\Users\dyha0\OneDrive\Рабочий стол\Progs\BeatySal\BeatySalon\BeatySalon\obj\Debug\net5.0-windows\BeatySalon.genruntimeconfig.cache

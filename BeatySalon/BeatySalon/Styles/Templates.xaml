@@ -33,7 +33,7 @@
     <!---->
     
     <!--Read Templates-->
-    <DataTemplate DataType="{x:Type models:Service}" x:Key="ServicesTemplate">
+    <DataTemplate DataType="{x:Type models:Service}" x:Key="ServicesTemplate" >
         <Border Style="{StaticResource ServicesBorder}">
             <Grid>
                 <Grid.RowDefinitions>
@@ -168,7 +168,7 @@
                 <TextBox Height="100" Text="{Binding Description}"/>
             </StackPanel>
 
-            <Button Grid.Row="3" Grid.Column="0" Content="Добаивть доп. картинку" Height="50" Margin="25"/>
+            <Button Grid.Row="3" Grid.Column="0" Content="Добаивть доп. картинку" Height="50" Margin="25" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.AddImage}"/>
 
             <Button Grid.Row="4" Grid.Column="1" Content="Сохранить" Height="50" Margin="25" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}" Command="{Binding RelativeSource={RelativeSource AncestorType=Window},Path=DataContext.ResultMessage}"/>
 

@@ -18,13 +18,14 @@ namespace BeatySalon.Models
         public void Delete()
         {
             Session.Context.ServicePhotos.Local.Remove(this);
-            try
-            {
-                File.Delete($"{Environment.CurrentDirectory}/Images/{PhotoPath}");
-            } catch(Exception ex) {
-            MessageVM message = new MessageVM();
-                message.Show("Error", ex.Message, MessageType.JustInfo);
-            }
+            RaisePropertyChanged("PhotoPath");
+            //try
+            //{
+            //    File.Delete($"{Environment.CurrentDirectory}/Images/{PhotoPath}");
+            //} catch(Exception ex) {
+            //MessageVM message = new MessageVM();
+            //    message.Show("Error", ex.Message, MessageType.JustInfo);
+            //}
 
         }
         public virtual Service Service { get; set; }
