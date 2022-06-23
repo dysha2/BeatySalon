@@ -203,7 +203,7 @@ namespace BeatySalon.ViewModels
                     Date=Date.AddHours(Hours);
                     Date=Date.AddMinutes(Minutes);
                     ClientService.StartTime = Date;
-                    Session.Context.ClientServices.Add(ClientService);
+                    Session.Context.ClientServices.Local.Add(ClientService);
                     Session.Context.SaveChanges();
                     ((Window)obj).Close();
                 }));

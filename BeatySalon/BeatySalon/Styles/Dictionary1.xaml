@@ -93,4 +93,11 @@
         </Style.Triggers>
     </Style>
     <!---->
+    
+    <!--List View Styles-->
+    <Style TargetType="{x:Type ListViewItem}">
+        <Setter Property="Focusable" Value="false"/>
+        <Setter Property="BorderBrush" Value="{StaticResource  FocusColor}"/>
+    </Style>
+    <!---->
 </ResourceDictionary>
